@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @use "./partials/variables";
+@use "./partials/header";
+@use "./partials/footer";
 
 * {
     margin: 0;

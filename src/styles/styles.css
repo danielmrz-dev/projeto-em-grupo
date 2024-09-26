@@ -1,11 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+.header {
+  border-bottom: 1px solid #dddddd;
+}
+.header__container {
+  padding: 1rem 1rem 0 1rem;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5rem;
+}
+.header__navbar-item a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+.header__navbar-item a:hover {
+  color: #7FAD39;
+}
+.header__favs-and-cart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__searchbar-container {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem;
+}
+.header__all-departments-btn {
+  background-color: #77b300;
+  color: #fff;
+  padding: 0 2rem;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+.header__input-container {
+  display: flex;
+  align-items: center;
+}
+.header__input-container input {
+  padding: 0.5rem;
+  min-width: 350px;
+  border: 1px solid #dddddd;
+  height: 45px;
+}
+.header__input-container button {
+  background-color: #77b300;
+  height: 45px;
+  padding: 0 2rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.header__contact-info-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__contact-info-phone span:first-child {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+.header__contact-info-phone span:last-child {
+  color: #a9a9a9;
+  font-size: 1rem;
+  align-self: end;
+}
+
+footer {
+  background-color: #e2e2dc;
+  color: #404040;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.links-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-navbar ul li {
+  margin: 5px 0;
+}
+
+.links-navbar a {
+  color: #404040;
+  text-decoration: none;
+}
+
+.links-navbar a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
-
-
-
-
