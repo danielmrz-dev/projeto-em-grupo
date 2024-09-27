@@ -1,43 +1,52 @@
-footer {
-    background-color: #e2e2dc; 
+@use "variables";
+
+.footer {
+    background-color: #F3F6FA; 
     color: #404040; 
     padding: 20px 0; 
+    &__container {
+        display: flex; 
+        justify-content: space-between; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px; 
+    }
+    &__useful-links {
+        list-style-type: none;
+    }
+    &__useful-link {
+        a {
+            text-decoration: none;
+            color: black;
+            transition: color .2s ease;
+            &:hover {
+                color: variables.$Green;
+            }
+        }
+    }
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    &__newsletter-phone-input {
+        height: 40px;
+        padding: 0 1rem;
+        border: 1px solid variables.$Gray-2;
+    }
+    &__newsletter-submit-btn {
+        height: 40px;        
+        padding: 0 1rem;
+        background-color: variables.$Green;
+        color: variables.$White;
+        border: none;
+        cursor: pointer;
+    }
+    &__copyright { 
+        text-align: center; 
+        margin-top: 20px; 
+        font-size: 1rem; 
+    }
 
 }
 
-.footer-container {
-    display: flex; 
-    justify-content: space-between; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
-}
-
-
-.links-navbar ul {
-    list-style-type: none;
-    padding: 0; 
-}
-
-.links-navbar ul li {
-    margin: 5px 0;
-}
-
-.links-navbar a {
-    
-    color: #404040; 
-    text-decoration: none; 
-}
-
-.links-navbar a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.footer-copyright { 
-    text-align: center; 
-    margin-top: 20px; 
-    font-size: 14px; 
-}
