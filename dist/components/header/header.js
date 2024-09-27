@@ -10,19 +10,19 @@ export class HeaderComponent {
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item">
-                                <a href="#">HOME</a>
+                                <a href="#">INÍCIO</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">SHOP</a>
+                                <a href="#">COMPRAR</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">PAGES</a>
+                                <a href="#">PÁGINAS</a>
                             </li>
                             <li class="header__navbar-item">
                                 <a href="#">BLOG</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">CONTACT</a>
+                                <a href="#">CONTATO</a>
                             </li>
                         </ul>
                     </nav>
@@ -34,17 +34,17 @@ export class HeaderComponent {
 
                 </div>
                 <div class="header__searchbar-container">
-                    <button class="header__all-departments-btn">All departments</button>
+                    <button class="header__all-departments-btn">Departamentos</button>
 
                     <div class="header__input-container">
-                        <input type="text" placeholder="What do you need?">
-                        <button class="header__search-btn">SEARCH</button>
+                        <input type="text" placeholder="O que você precisa?">
+                        <button class="header__search-btn">BUSCAR</button>
                     </div>
 
                     <div class="header__contact-info">
                         <div class="header__contact-info-phone">
-                            <span>📞 +65 11.188.888</span>
-                            <span>support 24/7 time</span>
+                            <span>📞 +65 (11) 99999-8888</span>
+                            <span>Atendimento 24h</span>
                         </div>
                     </div>
                 </div>
