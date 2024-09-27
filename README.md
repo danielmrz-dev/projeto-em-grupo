@@ -97,12 +97,9 @@ Este projeto foi desenvolvido por:
 
 Orientado pelo professor **[Luis Fernando Teixeira Bicalho]** como parte do programa Santander Coders 2024.
 
-
-
 ## 🔗 Links Úteis
 - [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
 - [CRUDCRUD API](https://crudcrud.com/)
-
 
 
 Esse é o arquivo `README.md` completo para o projeto de e-commerce de cadastro de produtos. Ele segue boas práticas, fornece detalhes claros sobre o desafio, objetivos, tecnologias utilizadas, estrutura do projeto e instruções de execução.
