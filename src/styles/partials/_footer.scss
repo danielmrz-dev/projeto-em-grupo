@@ -1,0 +1,43 @@
+footer {
+    background-color: #e2e2dc; 
+    color: #404040; 
+    padding: 20px 0; 
+
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+.links-navbar ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.links-navbar ul li {
+    margin: 5px 0;
+}
+
+.links-navbar a {
+    
+    color: #404040; 
+    text-decoration: none; 
+}
+
+.links-navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.footer-copyright { 
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
+}

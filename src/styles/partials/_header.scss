@@ -1,0 +1,86 @@
+@use "../partials/variables";
+
+.header {
+  border-bottom: 1px solid variables.$Gray-2;
+  &__container {
+    padding: 1rem 1rem 0 1rem;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  &__navbar-item {
+    a {
+      text-decoration: none;
+      color: variables.$Black;
+      font-weight: 800;
+      transition: color .2s ease;
+      &:hover {
+        color: variables.$Green;
+      }
+    }
+  }
+  &__favs-and-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__searchbar-container {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+  }
+  &__all-departments-btn {
+    background-color: #77b300;
+    color: #fff;
+    padding: 0 2rem;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+  }
+  &__input-container {
+    display: flex;
+    align-items: center;
+    input {
+      padding: .5rem;
+      min-width: 350px;     
+      border: 1px solid variables.$Gray-2;
+      height: 45px;
+    }
+    button {
+      background-color: #77b300;
+      height: 45px;
+      padding: 0 2rem;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &__contact-info-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+      &:first-child {
+        font-weight: 800;
+        font-size: 1.25rem;
+      }
+      &:last-child {
+        color: variables.$Gray-3;
+        font-size: 1rem;
+        align-self: end;
+      }
+    }
+  }
+}
+
