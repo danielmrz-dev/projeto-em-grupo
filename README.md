@@ -37,6 +37,8 @@ Além disso, foi solicitado que o projeto seguisse boas práticas de modulariza�
 - **TypeScript**: Linguagem de tipagem estática utilizada para desenvolvimento seguro e eficiente.
 - **HTML5**: Estruturação das páginas e componentes.
 - **CSS3**: Estilização da interface do usuário.
+- **SCSS**: Utilizado para facilitar a escrita, manutenção e organização de folhas de estilo.
+- **BEM**: Metodoligoa utilizada para nomear classes em CSS com foco em facilitar a reutilização e manutenção do código.git 
 - **CRUDCRUD**: API opcional para persistência de dados (além do Local Storage).
 - **Local Storage**: Persistência dos dados localmente no navegador.
 - **JavaScript**: Manipulação básica do DOM.
