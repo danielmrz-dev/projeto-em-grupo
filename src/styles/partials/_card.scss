@@ -1,102 +1,43 @@
 @use "../partials/variables";
 
-.section {
-    &__featured-products {
-        padding-top: 5rem;
-        padding-bottom: 2.5rem;
-        font-family: 'Cairo', sans-serif;
-
-        &__title {
-            margin-bottom: 3.125rem;
-            text-align: center;
-        }
-
-        h2 {
-            color: #1c1c1c;
-            font-weight: 900;
-            font-size: 2.25rem;
-            position: relative;
-
-            &:after {
-                position: absolute;
-                left: 0;
-                bottom: -0.9375rem;
-                right: 0;
-                height: 0.25rem;
-                width: 5rem;
-                background: #7fad39;
-                content: "";
-                margin: 0 auto;
-            }
-        }
-
-        &__categories {
-            margin-bottom: 3.125rem;
-            text-align: center;
-        }
-
-        &__links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5625rem;
-        }
-
-        &__link {
-            list-style: none;
-            color: #1c1c1c;
-            font-size: 1.125rem;
-            cursor: pointer;
-
-            a:focus {
-                border-bottom: #7fad39 solid 0.1875rem;
-            }
-        }
+.card {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    &__product {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: variables.$Gray-4;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__price {
+        color: #252525;
+        font-weight: 800;
+        font-size: 1.125rem;
     }
 
-    a {
-        text-decoration: none;
-        color: #1c1c1c;
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
-    &__card {
-        &__container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        &__info {
-            padding-top: 0.9375rem;
-            text-align: center;
-        }
-
-        &__title {
-            margin-bottom: 0.625rem;
-        }
-
-        &__price {
-            color: #252525;
-            font-weight: 800;
-            font-size: 1.125rem;
-        }
-
-        &__buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 15px 0;
-        }
-
-        &__button {
-            list-style: none;
-
-            a {
-                align-items: center;
-                border-radius: 5px;
-                background-color: #7fad39;
-                padding: 0 7px;
-            }
+    &__button {
+        list-style: none;
+        a {
+            align-items: center;
+            border-radius: 5px;
+            background-color: #7fad39;
+            padding: 0 7px;
         }
     }
 }
+

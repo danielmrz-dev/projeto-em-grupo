@@ -13,23 +13,20 @@ export class HeaderComponent {
                                 <a href="#">INÍCIO</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">COMPRAR</a>
+                                <a href="#">PRODUTOS</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">PÁGINAS</a>
+                                <a href="#">CADASTRAR PRODUTO</a>
                             </li>
                             <li class="header__navbar-item">
                                 <a href="#">BLOG</a>
-                            </li>
-                            <li class="header__navbar-item">
-                                <a href="#">CONTATO</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__favs-and-cart">
                         <span>❤ 1</span>
                         <span>🛒 3</span>
-                        <span>$150.00</span>
+                        <span>R$ 150,00</span>
                     </div>
 
                 </div>
