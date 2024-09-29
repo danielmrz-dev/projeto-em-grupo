@@ -1,4 +1,5 @@
 @use "variables";
+@use "./mixins";
 
 .footer {
     background-color: #F3F6FA; 
@@ -35,12 +36,8 @@
         border: 1px solid variables.$Gray-2;
     }
     &__newsletter-submit-btn {
+        @include mixins.btnsStyle(variables.$Green, variables.$White);
         height: 40px;        
-        padding: 0 1rem;
-        background-color: variables.$Green;
-        color: variables.$White;
-        border: none;
-        cursor: pointer;
     }
     &__copyright { 
         text-align: center; 

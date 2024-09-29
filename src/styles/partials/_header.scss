@@ -1,4 +1,5 @@
 @use "../partials/variables";
+@use "../partials/mixins";
 
 .header {
   border-bottom: 1px solid variables.$Gray-2;
@@ -41,12 +42,7 @@
     padding: 1rem;
   }
   &__all-departments-btn {
-    background-color: #77b300;
-    color: #fff;
-    padding: 0 2rem;
-    height: 45px;
-    border: none;
-    cursor: pointer;
+    @include mixins.btnsStyle(variables.$Green, variables.$White);
   }
   &__input-container {
     display: flex;
@@ -58,12 +54,7 @@
       height: 45px;
     }
     button {
-      background-color: #77b300;
-      height: 45px;
-      padding: 0 2rem;
-      color: #fff;
-      border: none;
-      cursor: pointer;
+      @include mixins.btnsStyle(variables.$Green, variables.$White);
     }
   }
   &__contact-info-phone {

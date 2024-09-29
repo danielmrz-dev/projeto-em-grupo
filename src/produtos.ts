@@ -1,4 +1,6 @@
-const produtos = [
+// import { IProduto } from "./interfaces/produto.interface";
+
+export const produtos = [
 	{
 		id: 1,
 		nome: "Arroz",
@@ -7,6 +9,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 100,
 		validade: "2025-01-01",
+		imagem: ""
 	},
 	{
 		id: 2,
@@ -17,6 +20,7 @@ const produtos = [
 		descontoValor: 1.0,
 		quantidadeEstoque: 120,
 		validade: "2024-06-20",
+		imagem: ""
 	},
 	{
 		id: 3,
@@ -26,6 +30,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 90,
 		validade: "2025-03-11",
+		imagem: ""
 	},
 	{
 		id: 4,
@@ -36,6 +41,7 @@ const produtos = [
 		descontoValor: 0.5,
 		quantidadeEstoque: 50,
 		validade: "2024-05-12",
+		imagem: ""
 	},
 	{
 		id: 5,
@@ -45,6 +51,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 60,
 		validade: "2024-11-30",
+		imagem: ""
 	},
 	{
 		id: 6,
@@ -55,6 +62,7 @@ const produtos = [
 		descontoValor: 2.0,
 		quantidadeEstoque: 40,
 		validade: "2024-07-10",
+		imagem: ""
 	},
 	{
 		id: 7,
@@ -64,6 +72,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 200,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 8,
@@ -74,6 +83,7 @@ const produtos = [
 		descontoValor: 0.3,
 		quantidadeEstoque: 150,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 9,
@@ -83,6 +93,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 85,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 10,
@@ -93,6 +104,7 @@ const produtos = [
 		descontoValor: 0.5,
 		quantidadeEstoque: 30,
 		validade: "2024-09-25",
+		imagem: ""
 	},
 	{
 		id: 11,
@@ -103,6 +115,7 @@ const produtos = [
 		descontoValor: 1.0,
 		quantidadeEstoque: 30,
 		validade: "2024-10-10",
+		imagem: ""
 	},
 	{
 		id: 12,
@@ -112,6 +125,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 100,
 		validade: "2024-09-28",
+		imagem: ""
 	},
 	{
 		id: 13,
@@ -122,6 +136,7 @@ const produtos = [
 		descontoValor: 0.75,
 		quantidadeEstoque: 80,
 		validade: "2024-09-20",
+		imagem: ""
 	},
 	{
 		id: 14,
@@ -131,6 +146,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 75,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 15,
@@ -140,6 +156,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 120,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 16,
@@ -150,6 +167,7 @@ const produtos = [
 		descontoValor: 3.0,
 		quantidadeEstoque: 60,
 		validade: null, // Produto não perecível
+		imagem: ""
 	},
 	{
 		id: 17,
@@ -160,6 +178,7 @@ const produtos = [
 		descontoValor: 2.0,
 		quantidadeEstoque: 80,
 		validade: "2025-02-15",
+		imagem: ""
 	},
 	{
 		id: 18,
@@ -169,6 +188,7 @@ const produtos = [
 		desconto: false,
 		quantidadeEstoque: 95,
 		validade: "2025-04-01",
+		imagem: ""
 	},
 	{
 		id: 19,
@@ -179,6 +199,7 @@ const produtos = [
 		descontoValor: 0.4,
 		quantidadeEstoque: 110,
 		validade: "2024-12-15",
+		imagem: ""
 	},
 	{
 		id: 20,
@@ -189,5 +210,6 @@ const produtos = [
 		descontoValor: 1.5,
 		quantidadeEstoque: 40,
 		validade: "2024-06-05",
+		imagem: ""
 	},
 ];
