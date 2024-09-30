@@ -1,6 +1,6 @@
 export class CardComponent {
 
-    render(nome: string, preco: number, imagem?: HTMLImageElement): string {
+    render(nome: string, preco: number, imagem: string): string {
         return `
             <li class="card__product">
                 <img src="${imagem}" alt="Imagem do produto ${nome}">
