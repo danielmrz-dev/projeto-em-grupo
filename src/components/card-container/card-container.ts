@@ -5,7 +5,7 @@ export class CardContainerComponent {
     render(produtos: any[]): string {
 
         const cardComponent = new CardComponent()
-        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco))
+        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco, produto.imagem))
 
         return `
             <main>

@@ -2,7 +2,7 @@ import { CardComponent } from "../card/card.js";
 export class CardContainerComponent {
     render(produtos) {
         const cardComponent = new CardComponent();
-        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco));
+        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco, produto.imagem));
         return `
             <main>
                 <section class="section__featured-products">
