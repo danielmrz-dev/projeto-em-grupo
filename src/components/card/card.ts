@@ -1,9 +1,9 @@
 export class CardComponent {
 
-    render(nome: string, preco: number): string {
+    render(nome: string, preco: number, imagem?: HTMLImageElement): string {
         return `
             <li class="card__product">
-                <img src="/src/assets/card-images/carne-picada-em-cubos.jpg" alt="Pedaços de carne vermelha picada em cubos médios">
+                <img src="${imagem}" alt="Imagem do produto ${nome}">
                 
                 <div class="card__info">
                     <p class="card__title"><a href="#">${nome}</a></p>
