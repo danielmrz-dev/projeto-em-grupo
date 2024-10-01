@@ -35,7 +35,6 @@ Além disso, foi solicitado que o projeto seguisse boas práticas de modulariza�
 - **TypeScript**: Linguagem de tipagem estática utilizada para desenvolvimento seguro e eficiente.
 - **HTML5**: Estruturação das páginas e componentes.
 - **CSS3**: Estilização da interface do usuário.
-
 - **Local Storage**: Persistência dos dados localmente no navegador.
 - **JavaScript**: Manipulação básica do DOM.
 
@@ -66,12 +65,12 @@ Este projeto foi desenvolvido por:
 - **[Natália Kuester](https://github.com/nataliakstr)**
 
 
-Orientado pelo professor **[Luis Fernando Teixeira Bicalho](https://linkedin.com/in/luís-fernando-teixeira-bicalho-a4b210158/)** no programa Santander Coders 2024.
-
+Orientado pelo professor **[Luis Fernando Teixeira Bicalho] (https://www.linkedin.com/in/lu%C3%ADs-fernando-teixeira-bicalho-a4b210158/)** como parte do programa Santander Coders 2024.
 
 
 ## 🔗 Links Úteis
 - [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
+
 
 
 

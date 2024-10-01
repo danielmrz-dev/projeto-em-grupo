@@ -1,0 +1,45 @@
+@use "../partials/variables";
+
+.card {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    &__product {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: variables.$Gray-4;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__price {
+        color: #252525;
+        font-weight: 800;
+        font-size: 1.125rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__button {
+        list-style: none;
+        button {
+            align-items: center;
+            border-radius: 5px;
+            background-color: #7fad39;
+            padding: 0 7px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
