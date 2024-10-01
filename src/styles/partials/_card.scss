@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     &__product {
         display: flex;
         flex-direction: column;
@@ -32,11 +32,13 @@
 
     &__button {
         list-style: none;
-        a {
+        button {
             align-items: center;
             border-radius: 5px;
             background-color: #7fad39;
             padding: 0 7px;
+            border: none;
+            cursor: pointer;
         }
     }
 }

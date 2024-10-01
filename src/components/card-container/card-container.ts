@@ -1,3 +1,4 @@
+import { IProduto } from "../../interfaces/produto.interface.js"
 import { CardComponent } from "../card/card.js"
 
 export class CardContainerComponent {
@@ -5,7 +6,7 @@ export class CardContainerComponent {
     render(produtos: any[]): string {
 
         const cardComponent = new CardComponent()
-        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco))
+        const cards = produtos.map((produto: IProduto) => cardComponent.render(produto.id, produto.nome, produto.setor, produto.preco, produto.imagem))
 
         return `
             <main>
@@ -37,7 +38,7 @@ export class CardContainerComponent {
                     </div>
             
                     <ul class="card">
-                        ${cards}
+                        ${cards.join("")}
                     </ul>            
                 </section>
             </main>

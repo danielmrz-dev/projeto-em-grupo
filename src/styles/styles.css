@@ -137,7 +137,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .card__product {
   display: flex;
@@ -164,11 +164,13 @@ a {
 .card__button {
   list-style: none;
 }
-.card__button a {
+.card__button button {
   align-items: center;
   border-radius: 5px;
   background-color: #7fad39;
   padding: 0 7px;
+  border: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -220,53 +222,66 @@ a {
   font-size: 1rem;
 }
 
-.form {
+dialog {
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+dialog .form {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 2rem;
 }
-.form__fieldset {
+dialog .form__fieldset {
   min-width: 475px;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 2rem;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #a9a9a9;
 }
-.form__fieldset legend {
-  font-size: 1.5rem;
+dialog .form__fieldset legend {
+  font-size: 1.25rem;
   font-weight: 800;
 }
-.form__inputs-container:not(:nth-child(5)) {
+dialog .form__inputs-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.form__inputs-container:not(:nth-child(5)) input, .form__inputs-container:not(:nth-child(5)) select {
+dialog .form__inputs-container input, dialog .form__inputs-container select {
   width: 100%;
   padding: 0.1rem 0.5em;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid #a9a9a9;
 }
-.form__inputs-container:not(:nth-child(5)) input:focus, .form__inputs-container:not(:nth-child(5)) select:focus {
+dialog .form__inputs-container input:focus, dialog .form__inputs-container select:focus {
   outline: 1px solid #7FAD39;
 }
-.form__inputs-container:not(:nth-child(5)) label {
+dialog .form__inputs-container label {
   cursor: pointer;
 }
-.form__inputs-container:nth-child(5) {
+dialog .form__btns-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
-.form__inputs-container:nth-child(5) label, .form__inputs-container:nth-child(5) input {
+dialog .form__cancelar {
+  background-color: #c30707;
+  color: #ffffff;
+  padding: 0 2rem;
+  height: 45px;
+  border: none;
   cursor: pointer;
+  border-radius: 2px;
+  width: 50%;
 }
-.form__submit-btn {
+dialog .form__submit-btn {
   background-color: #7FAD39;
   color: #ffffff;
   padding: 0 2rem;
@@ -274,6 +289,7 @@ a {
   border: none;
   cursor: pointer;
   border-radius: 2px;
+  width: 50%;
 }
 
 .editar {
@@ -281,6 +297,7 @@ a {
   padding: 1rem 1.5rem;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
+  min-width: 400px;
 }
 .editar__container {
   display: flex;
@@ -295,6 +312,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0.5rem 0;
 }
 .editar__inputs-container input, .editar__inputs-container select {
   width: 100%;
