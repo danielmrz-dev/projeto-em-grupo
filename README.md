@@ -86,6 +86,10 @@ Contém os serviços de persistência de dados:
    ```bash
    git clone https://github.com/danielmrz-dev/projeto-em-grupo
 
+## Visualize o Projeto
+
+<img src="./src/assets/Img projeto.png" alt="projeto finalizado" width="600">
+
 ## 👥 Equipe de Desenvolvimento
 Este projeto foi desenvolvido por:
 
