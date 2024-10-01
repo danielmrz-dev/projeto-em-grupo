@@ -1,0 +1,11 @@
+@use "./variables";
+
+@mixin btnsStyle($bgColor, $color) {
+    background-color: $bgColor;
+    color: $color;
+    padding: 0 2rem;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}

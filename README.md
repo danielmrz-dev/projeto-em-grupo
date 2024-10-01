@@ -37,6 +37,8 @@ Além disso, foi solicitado que o projeto seguisse boas práticas de modulariza�
 - **TypeScript**: Linguagem de tipagem estática utilizada para desenvolvimento seguro e eficiente.
 - **HTML5**: Estruturação das páginas e componentes.
 - **CSS3**: Estilização da interface do usuário.
+- **SCSS**: Utilizado para facilitar a escrita, manutenção e organização de folhas de estilo.
+- **BEM**: Metodologia utilizada para nomear classes em CSS com foco em facilitar a reutilização e manutenção do código. 
 - **CRUDCRUD**: API opcional para persistência de dados (além do Local Storage).
 - **Local Storage**: Persistência dos dados localmente no navegador.
 - **JavaScript**: Manipulação básica do DOM.
@@ -101,12 +103,9 @@ Este projeto foi desenvolvido por:
 
 Orientado pelo professor **[Luis Fernando Teixeira Bicalho]** como parte do programa Santander Coders 2024.
 
-
-
 ## 🔗 Links Úteis
 - [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
 - [CRUDCRUD API](https://crudcrud.com/)
-
 
 
 Esse é o arquivo `README.md` completo para o projeto de e-commerce de cadastro de produtos. Ele segue boas práticas, fornece detalhes claros sobre o desafio, objetivos, tecnologias utilizadas, estrutura do projeto e instruções de execução.

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @use "./partials/variables";
+@use "./partials/header";
+@use "partials/card-container";
+@use "partials/card";
+@use "./partials/footer";
+@use "./partials/form-cadastro";
+@use "./partials/modal-editar";
+@use "./partials/modal-excluir";
 
 * {
     margin: 0;

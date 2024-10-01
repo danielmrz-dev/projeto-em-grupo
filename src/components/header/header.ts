@@ -6,44 +6,48 @@ export class HeaderComponent {
 
     render(): string {
         return `
-    <header>
-        <div class="container">
-            <!-- Linha 1: Menu de navegação -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+            <header class="header">
+                <div class="header__container">
+                    <img src="src/assets/logo-ogani.png" alt="Logo" class="header__logo">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="#">INÍCIO</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="#">PRODUTOS</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="#" class="btn-cadastrar">CADASTRAR PRODUTO</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="#">BLOG</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__favs-and-cart">
+                        <span>❤ 1</span>
+                        <span>🛒 3</span>
+                        <span>R$ 150,00</span>
+                    </div>
 
-            <!-- Linha 2: Logo, Barra de Pesquisa e Carrinho -->
-            <div class="search-section">
-                <div class="logo">
-                    <img src="./assets/logo ogani.png" alt="Logo">
-                
                 </div>
-                <div class="search-bar">
-                    <button class="dropdown">All departments</button>
-                    <input type="text" placeholder="What do you need?">
-                    <button class="search-btn">SEARCH</button>
-                </div>
-                <div class="cart-info">
-                    <div class="cart-icons">
-                        <span class="wishlist">❤ 1</span>
-                        <span class="cart">🛒 3</span>
-                        <span class="total">$150.00</span>
+                <div class="header__searchbar-container">
+                    <button class="header__all-departments-btn">Departamentos</button>
+
+                    <div class="header__input-container">
+                        <input type="text" placeholder="O que você precisa?">
+                        <button class="header__search-btn">BUSCAR</button>
                     </div>
-                    <div class="phone">
-                        <span>📞 +65 11.188.888</span>
-                        <span>support 24/7 time</span>
+
+                    <div class="header__contact-info">
+                        <div class="header__contact-info-phone">
+                            <span>📞 +65 (11) 99999-8888</span>
+                            <span>Atendimento 24h</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
+            </header>
         `
     }
 }
