@@ -1,8 +1,5 @@
 export class HeaderComponent {
 
-    constructor() {
-        this.render()
-    }
 
     render(): string {
         return `
