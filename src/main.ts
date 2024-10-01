@@ -26,10 +26,10 @@ export function renderizaTudo(produtos: IProduto[]) {
 	if (body) {
 		body.innerHTML += elementoHeader.render();
 		body.innerHTML += elementoMain.render(produtos);
-		body.innerHTML += elementoFormularioDeCadastro.render();
 		body.innerHTML += elementoFooter.render();
-		body.innerHTML += elementoModalEditar.render();
 		body.innerHTML += elementoModalExcluir.render();
+		body.innerHTML += elementoModalEditar.render();
+		body.innerHTML += elementoFormularioDeCadastro.render();
 		EditarProduto.editarProduto();
 		ExcluirProduto.excluirProduto();
 		CadastrarProduto.cadastrarProduto();

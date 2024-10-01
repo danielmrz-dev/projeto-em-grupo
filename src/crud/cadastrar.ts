@@ -3,6 +3,7 @@ import { body, produtosParseados, renderizaTudo } from "../main.js";
 import { produtos } from "../produtos.js";
 
 export class CadastrarProduto {
+
 	static cadastrarProduto(): void {
         const btnCadastrar = document.querySelector(".btn-cadastrar") as HTMLAnchorElement;
         const cadastrarModal = document.querySelector(".form-cadastro") as HTMLDialogElement;
@@ -24,7 +25,7 @@ export class CadastrarProduto {
         btnAdicionaNovoProduto.addEventListener("click", () => {
 
             if (inputNome.value === "" || inputPreco.value === "" || isNaN(Number(inputPreco.value))) {
-                alert("Por favor, preencha os dados do novo produto!");
+                alert("Por favor, preencha os dados do novo produto corretamente!");
                 return;
             }
 
@@ -33,7 +34,7 @@ export class CadastrarProduto {
                 nome: inputNome.value,
                 setor: inputSelect.value,
                 preco: Number(inputPreco.value),
-                imagem: "./assets/card-images/newProduct.png"
+                imagem: "src/assets/card-images/newProduct.png"
             }
 
             produtosParseados.push(novoProduto);
