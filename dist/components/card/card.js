@@ -1,40 +1,48 @@
+import { formataMoeda } from "../../utils/formataMoeda.js";
 export class CardComponent {
-    render(nome, preco) {
+    render(id, nome, setor, preco, imagem) {
         return `
-            <li class="card__product">
-                <img src="/src/assets/card-images/carne-picada-em-cubos.jpg" alt="Pedaços de carne vermelha picada em cubos médios">
+            <li class="card__product" id=${id}>
+                <img src="${imagem}" alt="${nome}" class="card__product-img">
                 
                 <div class="card__info">
-                    <p class="card__title"><a href="#">${nome}</a></p>
-                    <p class="card__price"><a href="#">R$ ${preco}</a></p>
+                    <p class="card__title">
+                        ${nome}
+                    </p>
+                    <p class="card__title">
+                        ${setor}
+                    </p>
+                    <p class="card__price">
+                        ${formataMoeda(preco)}
+                    </p>
                 </div>
                 <ul class="card__buttons">
                     <li class="card__button">
                         <abbr title="Favoritar">
-                            <a href="#">
+                            <button class="card__favoritar">
                                 <i class="fa-solid fa-heart"></i>
-                            </a>
+                            </button>
                         </abbr>
                     </li>
                     <li class="card__button">
                         <abbr title="Exlcuir">
-                            <a href="#">
+                            <button class="card__excluir">
                                 <i class="fa-solid fa-trash"></i>
-                            </a>
+                            </button>
                         </abbr>
                     </li>
                     <li class="card__button">
                         <abbr title="Editar">
-                            <a href="#">
+                            <button class="card__editar">
                                 <i class="fa-solid fa-pen-to-square"></i>
-                            </a>
+                            </button>
                         </abbr>
                     </li>
                     <li class="card__button">
                         <abbr title="Adicionar ao Carrinho">
-                            <a href="#">
+                            <button class="card__adicionar">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
+                            </button>
                         </abbr>
                     </li>  
                 </ul>

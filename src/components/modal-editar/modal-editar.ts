@@ -27,19 +27,11 @@ export class ModalEditarComponent {
                         </div>
                         <div class="editar__inputs-container">
                             <label class="editar__labels" for="editar-preco">Preço:</label>
-                            <input type="number" id="editar-preco">
-                        </div>
-                        <div class="editar__inputs-container">
-                            <label class="editar__labels" for="editar-quantidade">Quantidade no estoque:</label>
-                            <input type="number" id="editar-quantidade">
-                        </div>
-                        <div class="editar__inputs-container">
-                            <label class="editar__labels" for="editar-validade">Data de validade:</label>
-                            <input type="date" name="" id="editar-validade">
+                            <input type="text" id="editar-preco">
                         </div>
                         <div class="editar__btns-container">
                             <button class="editar__cancelar">Cancelar</button>
-                            <button type="submit" class="editar__submit-btn">Cadastrar</button>
+                            <button class="editar__submit-btn">Atualizar</button>
                         </div>
                     </form>
                 </div>

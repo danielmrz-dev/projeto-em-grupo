@@ -2,7 +2,7 @@ import { CardComponent } from "../card/card.js";
 export class CardContainerComponent {
     render(produtos) {
         const cardComponent = new CardComponent();
-        const cards = produtos.map((produto) => cardComponent.render(produto.nome, produto.preco));
+        const cards = produtos.map((produto) => cardComponent.render(produto.id, produto.nome, produto.setor, produto.preco, produto.imagem));
         return `
             <main>
                 <section class="section__featured-products">
@@ -33,7 +33,7 @@ export class CardContainerComponent {
                     </div>
             
                     <ul class="card">
-                        ${cards}
+                        ${cards.join("")}
                     </ul>            
                 </section>
             </main>

@@ -1,29 +1,39 @@
-
 import { CardContainerComponent } from "./components/card-container/card-container.js";
 import { FooterComponent } from "./components/footer/footer.js";
 import { FormCadastroComponent } from "./components/formCadastro/form-cadastro.js";
 import { HeaderComponent } from "./components/header/header.js";
 import { ModalEditarComponent } from "./components/modal-editar/modal-editar.js";
+import { ModalExcluirComponent } from "./components/modal-excluir/modal-excluir.js";
+import { CadastrarProduto } from "./crud/cadastrar.js";
 import { EditarProduto } from "./crud/editar.js";
+import { ExcluirProduto } from "./crud/excluir.js";
+import { IProduto } from "./interfaces/produto.interface.js";
 import { produtos } from "./produtos.js";
 
-// Captura o elemento body para inserir os componentes criados nele
-const body = document.querySelector("body");
+export const body = document.querySelector("body");
 
-// Cria uma instância do elemento criado com a classe para inserir no body
 const elementoHeader = new HeaderComponent();
-const elementoMain = new CardContainerComponent()
+export const elementoMain = new CardContainerComponent();
 const elementoFooter = new FooterComponent();
 const elementoModalEditar = new ModalEditarComponent();
-const crudEditar = new EditarProduto();
+const elementoModalExcluir = new ModalExcluirComponent();
 const elementoFormularioDeCadastro = new FormCadastroComponent();
 
-// Insere os elementos dentro do body
-if (body) {
-	body.innerHTML += elementoHeader.render();
-	body.innerHTML += elementoMain.render(produtos);	
-	body.innerHTML += elementoFooter.render();
-	body.innerHTML += elementoModalEditar.render();
+const produtosArmazenados = localStorage.getItem("produtos")
+export const produtosParseados = produtosArmazenados ? JSON.parse(produtosArmazenados) as IProduto[] : produtos;
+
+export function renderizaTudo(produtos: IProduto[]) {
+	if (body) {
+		body.innerHTML += elementoHeader.render();
+		body.innerHTML += elementoMain.render(produtos);
+		body.innerHTML += elementoFormularioDeCadastro.render();
+		body.innerHTML += elementoFooter.render();
+		body.innerHTML += elementoModalEditar.render();
+		body.innerHTML += elementoModalExcluir.render();
+		EditarProduto.editarProduto();
+		ExcluirProduto.excluirProduto();
+		CadastrarProduto.cadastrarProduto();
+	}
 }
 
-crudEditar.editarProduto();
+renderizaTudo(produtosParseados);

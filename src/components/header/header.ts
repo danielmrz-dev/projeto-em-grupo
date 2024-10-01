@@ -8,7 +8,7 @@ export class HeaderComponent {
         return `
             <header class="header">
                 <div class="header__container">
-                    <img src="../../src/assets/logo ogani.png" alt="Logo" class="header__logo">
+                    <img src="../../src/assets/logo-ogani.png" alt="Logo" class="header__logo">
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item">
@@ -18,7 +18,7 @@ export class HeaderComponent {
                                 <a href="#">PRODUTOS</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="#">CADASTRAR PRODUTO</a>
+                                <a href="#" class="btn-cadastrar">CADASTRAR PRODUTO</a>
                             </li>
                             <li class="header__navbar-item">
                                 <a href="#">BLOG</a>

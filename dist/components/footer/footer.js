@@ -8,7 +8,7 @@ export class FooterComponent {
         <div class="footer__container">
           <div class="footer__contact-info">
                       <img
-                          src="../../src/assets/logo ogani.png"
+                          src="../../src/assets/logo-ogani.png"
                           alt="imagem com Logo/Nome mercado"
                           style="width: 100px; height: auto"
                       />
