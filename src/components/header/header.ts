@@ -8,7 +8,7 @@ export class HeaderComponent {
         return `
             <header class="header">
                 <div class="header__container">
-                    <img src="../../src/assets/logo-ogani.png" alt="Logo" class="header__logo">
+                    <img src="src/assets/logo-ogani.png" alt="Logo" class="header__logo">
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item">
